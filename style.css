@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+#input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  background: rgba(225, 225, 225, 0.8);
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+#input input {
+  width: 240px;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 10pt;
+}
+
+#clear, #shuffle {
+  font-size: 11pt !important;
+  font-weight: bold;
+}
+
+#centered {
+  margin: auto;
+  width: 400px;
+}
+
+#cube {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  perspective: 1000px;
+}
+
+.face-border, .face-border div {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.face-border {
+  background: black;
+}
+
+.face-1 {
+  background: rgba(0, 155, 72, 1);
+}
+
+.face-2 {
+  background: rgba(185, 0, 0, 1);
+}
+
+.face-3 {
+  background: rgba(0, 69, 173, 1);
+}
+
+.face-4 {
+  background: rgba(255, 89, 0, 1);
+}
+
+.face-5 {
+  background: rgba(235, 235, 235, 1);
+}
+
+.face-6 {
+  background: rgba(255, 213, 0, 1);
+}
