@@ -161,8 +161,8 @@ function main() {
 
   function rotate(group, axis, dir, n, callback) {
   
-    t.rotateX(0.5).rotateY(0.2).rotateZ(0.1);
-    for (let c of subCubes) c.updateDivTransforms(t);
+    // t.rotateX(0.5).rotateY(0.2).rotateZ(0.1);
+    // for (let c of subCubes) c.updateDivTransforms(t);
   
     if (n == 0) {
       for (let c of group) c.rotateT(axis, dir);
@@ -181,6 +181,9 @@ function main() {
         c.transform.preRotate(axis, dir * a);
         c.updateDivTransforms(t);
       }
+      
+      t.rotate(axis, -dir * a / 5);
+      for (let c of subCubes) c.updateDivTransforms(t);
       
       requestAnimationFrame(
           function() {
