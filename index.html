@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+    <script src="{{ site.baseurl }}/js/cube.js" type="module"></script>
+  </head>
+  <body>
+    <div id="input">
+      Choose images for the faces:<br />
+      <form>
+        <input id="file-1" type="file" accept="image/*" /><br />
+        <input id="file-2" type="file" accept="image/*" /><br />
+        <input id="file-3" type="file" accept="image/*" /><br />
+        <input id="file-4" type="file" accept="image/*" /><br />
+        <input id="file-5" type="file" accept="image/*" /><br />
+        <input id="file-6" type="file" accept="image/*" /><br />
+        <input id="clear" type="button" value="Clear Choices" /><br />
+        <input id="shuffle" type="button" value="Start Shuffling" />
+      </form>
+    </div>
+    <div id="centered">
+      <div id="cube"></div>
+    </div>
+  </body>
+</html>
+
